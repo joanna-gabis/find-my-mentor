@@ -1,4 +1,4 @@
-export const APP_PORT = process.env.PORT || 3000
+export const APP_PORT = process.env.PORT || 3002
 export const APP_HOST = process.env.HOST || 'localhost'
 
 export const DB_PORT = process.env.MONGO_PORT || 27017

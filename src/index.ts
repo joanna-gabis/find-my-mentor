@@ -4,7 +4,7 @@ import cookieSession from 'cookie-session'
 import cors from 'cors'
 import morgan from 'morgan'
 
-import { connectToDB } from './db'
+import { connectToDB } from './models'
 
 // Controllers
 import { rootRouter } from './controllers/RootController'
@@ -27,7 +27,7 @@ import { mentorRouter } from './controllers/MentorController'
 	// Connect to the database
 	await connectToDB()
 
-	app.listen('3000', () => {
-		console.log('listening on port 3000')
+	app.listen('3002', () => {
+		console.log('listening on port 3002')
 	})
 })()
